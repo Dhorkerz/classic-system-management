@@ -1,0 +1,35 @@
+/* index.css */
+
+.description{
+	margin:50% 10%; 
+	background-color: rgba(66,0,10,0.7);
+	padding: 5% 7%;
+	border-radius: 10%;
+	width: auto;
+	position: relative;
+	text-align: center;flex:1 auto;
+	/*fluid typography using formular :- font-size: calc([minimum size] + ([maximum size] - [minimum size]) * ((100vw - [minimum viewport width]) / ([maximum viewport width] - [minimum viewport width])));*/
+	font-size: calc(16px + (25 - 16) * ((100vw - 300px) / (1600 - 300)));
+  	line-height: calc(2em + (2.3 - 2) * ((100vw - 300px)/(1600 - 300)));}
+.description h1 {
+	color: white;
+	/*fluid typography using formular :- font-size: calc([minimum size] + ([maximum size] - [minimum size]) * ((100vw - [minimum viewport width]) / ([maximum viewport width] - [minimum viewport width])));*/
+	font-size: calc(35px + (40 - 35) * ((100vw - 300px) / (1600 - 300)));
+  	line-height: calc(1.5em + (1.8 - 1.5) * ((100vw - 300px)/(1600 - 300)));
+}
+.description p {
+	color:white ;
+	
+}
+.btn{
+	font-size: calc(16px + (25 - 16) * ((100vw - 300px) / (1600 - 300)));
+  	line-height: calc(1.5em + (1.8 - 1.5) * ((100vw - 300px)/(1600 - 300)));border-radius: ;background-color: rgb(66,0,10);color: white;border:hidden;max-width: 100%;width: auto;height: auto;
+}
+.btn:hover,.btn:active{
+	background-color: rgb(255 255 255) !important;color: rgb(66 0 10);
+}
+#more{
+	display: none;
+}
+
+

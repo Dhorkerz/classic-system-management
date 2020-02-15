@@ -1,0 +1,10 @@
+/* Classes.css */
+form{margin: 3% 5% 10%;height: auto;}
+.form-group{display: flex;}
+label{width: 50%;display: flex;white-space: nowrap;}
+.form-control{width:50%;}
+#content{display: flex;flex-direction: column;justify-content: center;}
+@media (max-width: 510px){
+	.form-group{flex-direction: column;}
+	.form-control,label{width: 100%;}
+}

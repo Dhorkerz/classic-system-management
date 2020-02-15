@@ -1,0 +1,85 @@
+/*csm.css*/
+
+
+html{
+	background: none;
+	margin: 0;
+	padding: 0;height: 100%;
+}
+
+body{
+	display: flex;flex-direction: column;
+	height: 100%;
+	margin: 0;
+	padding: 0;
+	background-image: url(../images/backgroundimg.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	background-attachment:fixed ;
+	/*fluid typography using formular :- font-size: calc([minimum size] + ([maximum size] - [minimum size]) * ((100vw - [minimum viewport width]) / ([maximum viewport width] - [minimum viewport width])));*/
+	font-size: calc(14px + (20 - 14) * ((100vw - 300px) / (1600 - 300)));
+  	line-height: calc(1.5em + (1.8 - 1.5) * ((100vw - 300px)/(1600 - 300)));
+
+}
+/*--- navigation bar ---*/
+
+.navbar {
+	flex-shrink: 0;background-color: rgba(66, 0, 10, 0.7);
+	padding: 0;margin: 0;overflow: hidden;
+}
+a{
+	border:hidden;
+	color: white;
+	cursor: pointer;
+	text-decoration: none;
+	position: relative;
+	max-height: 100%;
+	max-width: 100%;
+	padding-top: 22px;
+	padding-bottom: 22px;
+	padding-left: 20px;
+	padding-right: 20px;
+}
+.active,a:hover{
+	background-color:rgba(255, 255, 255, 0.9) ;
+	color: rgb(66,0,10);
+	text-decoration: none;
+}
+.navbar-collapse {
+	justify-content: flex-end;
+}
+.navbar-toggler{
+	margin-right: 10px;
+
+}
+.footer{
+	
+	flex-shrink: 0;bottom: 0;left: 0;right: 0;float: none;clear: left;
+	background-color: rgba(66,0,10,0.7);
+	color: white;
+	height: auto;min-height: ;position: relative;bottom: 0;
+}
+h6{	font-size: calc(16px + (20 - 16) * ((100vw - 300px) / (1600 - 300)));
+  	line-height: calc(1.3em + (1.5 - 1.2) * ((100vw - 300px)/(1600 - 300)));}
+
+#below{
+display: flex;flex-direction: column;text-align: right;padding-top: 5px;
+}
+.below{flex: 1;padding: 1%;}
+.copyright{		
+	background-color: rgb(66, 0 ,10);padding:2px;position: relative;z-index: 10px;
+}
+@media (max-width: 837px){
+	a{
+		display: block;
+		padding: 5px;
+	}
+}
+@media (max-width: 913px){
+	a{padding:22px 14px;}
+}
+@media (min-width: 576px){
+	#below{flex-direction: row;}
+	.footerbox{border-right: 2px white solid;}
+}

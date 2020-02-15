@@ -1,0 +1,10 @@
+/* Courses.css */
+form{margin: 3% 5% 10%;height: auto;}
+.form-group{display: flex;justify-content: space-between;}
+label{width:40% ;display: flex;}
+.form-control{width:60% ;}
+#content{display: flex;flex-direction: column;justify-content: center;}
+@media (max-width: 510px){
+	.form-group{flex-direction: column;}
+	.form-control,label{width: 100%;}
+}

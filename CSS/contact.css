@@ -1,0 +1,15 @@
+.heading{
+ 	margin-top: -5px;background-color: rgb(66,0,10);text-align: center;color: white;padding: 5px;
+ }
+.form{
+ 	height:auto;width: 50%;background-color: rgba(66,0,10,0.7); margin:0 auto ;padding: 15px;margin-top: -15px;margin-bottom: 15px
+ }
+ textarea.msg{
+ 	width: 100%;
+ }
+button.btn{
+ 	display: block;font-size:1em;margin: 0 auto;background-color: rgb(66 0 10);min-width:25%;border:hidden;margin-top: -60px; 
+ }
+button.btn:hover,button.btn:active{
+	background-color:white; 
+}

@@ -1,0 +1,145 @@
+/*csmxtension.css*/
+
+
+html{
+	background: none;
+	margin,padding: 0;
+	height: 100%;
+
+}
+
+body{
+	display: flex;flex-direction: column;
+	height: 100%;
+	margin: 0;
+	padding: 0;
+	background-image: url(../images/backgroundimg.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	background-attachment:fixed ;
+	/*fluid typography using formular :- font-size: calc([minimum size] + ([maximum size] - [minimum size]) * ((100vw - [minimum viewport width]) / ([maximum viewport width] - [minimum viewport width])));*/
+	font-size: calc(14px + (20 - 14) * ((100vw - 300px) / (1600 - 300)));
+  	line-height: calc(1.5em + (1.8 - 1.5) * ((100vw - 300px)/(1600 - 300)));
+
+}
+/*--- navigation bar ---*/
+nav{height:  ;}
+.navbar {flex-shrink:0;
+	background-color: rgba(66, 0, 10, 0.7);
+	padding: 0;margin: 0;overflow: hidden;}
+a{
+	border:hidden;
+	color: white;
+	cursor: pointer;
+	text-decoration: none;
+	position: relative;
+	max-height: 100%;
+	max-width: 100%;
+	padding-top: 22px;
+	padding-bottom: 22px;
+	padding-left: 20px;
+	padding-right: 20px;
+}
+.active,a:hover{
+	background-color:rgba(255, 255, 255, 0.9) ;
+	color: rgb(66,0,10);
+	text-decoration: none;
+}
+.navbar-collapse {
+	justify-content: flex-end;
+}
+.navbar-toggler{
+	margin-right: 10px;
+}
+
+#wrapper{
+	flex-grow: 1;flex-basis: 100%;width: 80%;display: flex;flex-direction:column;position: relative;
+
+}
+#aside{
+	background-color:rgba(66,0,10,0.7);width: 100%;flex:1;}
+#main{
+	flex-grow:1;flex-basis: 100%;overflow:hidden;width: 100% ;display: flex;flex-direction: column;
+}
+#logout{background-color: rgb(66 0 10);border: hidden;color: white;float: right;margin:10% 5% 0 0;max-width: 100%;width: ;height: auto;align-self: flex-end;font-size: calc(14px + (20 - 14) * ((100vw - 300px) / (1600 - 300)));
+  	line-height: calc(1.5em + (1.8 - 1.5) * ((100vw - 300px)/(1600 - 300)));}
+
+#logout:hover,#logout:active{background-color: rgba(66, 0, 10, 0.9);}                                                       
+.spanmessage{margin: 40% 5%;color: rgba(66,0,10);font-size: calc(30px + (35 - 30) * ((100vw - 300px) / (1600 - 300)));
+  	line-height: calc(40px + (44 - 40) * ((100vw - 300px)/(1600 - 300)))}
+
+#link{
+	height:12.5% ;white-space: nowrap;text-decoration: none;
+	width: 100%;display: flex;align-items: center;
+}
+#link.active{
+	background-color: rgba(66, 0, 10, 0.7);
+	color: white;
+}
+#link:hover{
+	background-color: rgba(255,255,255,0.7);
+	color:  rgb(66 0 10);
+}
+
+.btn{font-size: calc(14px + (20 - 14) * ((100vw - 300px) / (1600 - 300)));
+  	line-height: calc(1.5em + (1.8 - 1.5) * ((100vw - 300px)/(1600 - 300)));width: auto;height: auto;background-color: rgb(66 0 10);color: white;border: hidden;}
+.btn:hover,.btn:active{background-color:rgba(66,0,10,0.9) !important; }
+
+
+#content{
+	min-height: 550px;border:rgb(66 0 10) 5px solid;margin: 0; color: rgb(66 0 10);text-align: center;background-color: rgba(255,255,255,0.7);flex:1 1 100%;
+}
+header{
+	display: flex;justify-content: center;flex-direction: column;align-items: center;overflow:hidden;background-color: rgb(66,0,10);flex:1 1 auto;min-height: 100px;
+}
+h5{
+	height: auto;margin-bottom:-8px;padding-bottom: 8px ;color:white;text-align: center;background-color: rgb(66 0 10);overflow: hidden;font-size: calc(20px + (24 - 20) * ((100vw - 300px) / (1600 - 300)));
+  	line-height: calc(1.3em + (1.5 - 1.2) * ((100vw - 300px)/(1600 - 300)));
+}
+
+.footer{
+	flex-shrink: 0;
+	bottom: 0;left: 0;right: 0;
+	background-color: rgba(66,0,10,0.7);
+	color: white;
+	height: auto;min-height;position: relative;
+}
+
+#below{
+	display: flex;flex-direction: column;text-align: right;padding-top: 5px;
+}
+.below{flex: 1;padding: 1%;}
+
+h6{	font-size: calc(16px + (20 - 16) * ((100vw - 300px) / (1600 - 300)));
+  	line-height: calc(1.3em + (1.5 - 1.2) * ((100vw - 300px)/(1600 - 300)));}
+
+.copyright{		
+	background-color: rgb(66, 0 ,10);padding:2px;position: relative;z-index: 10px;
+}
+
+@media (max-width: 837px){
+	a{
+		display: block;
+		padding: 5px;
+	}
+}
+@media (max-width: 913px){
+	a{padding:22px 14px;}
+}
+@media (min-width: 576px){
+	#below{flex-direction: row;}
+	.footerbox{border-right: 2px white solid;}
+}
+
+@media (min-width: 768px){
+	/*at viewport larger than 768;aside and main should be stacked horizontally not vertically*/
+	#wrapper{
+		margin:0 10%;flex-direction: row;overflow: ;
+	}
+	#aside{
+		flex:1 1 30%;}
+	#main{
+		flex:1 1 70%;}
+	}	
+}

@@ -1,0 +1,11 @@
+/*prospect.css*/
+
+.form-control{color: rgb(66 0 10);border: 1px solid rgb(66 0 10);width: 100%}
+label{float: left;}
+.form-group{margin-bottom: -16px;}
+form{padding:0 5%}
+#content{display: flex;flex-direction: column;justify-content: center;}
+@media (max-width: 510px){
+	.form-group{flex-direction: column;}
+	.form-control,label{width: 100%;}
+}
